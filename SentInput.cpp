@@ -10,7 +10,7 @@ int main()
 char word;
 int woRdlim = 10;
 
-string wordstr("I need an input.");
+string wordstr( word );
 
 cout<< wordstr << endl;
 
