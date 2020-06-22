@@ -10,7 +10,9 @@ int main()
 char word;
 int woRdlim = 10;
 
+string wordstr("I need an input.");
 
+cout<< wordstr << endl;
 
 cout << "Just give me a sentence of up to 10 words. The words can be as long as you want" << endl;
 cin >> word;
