@@ -37,7 +37,7 @@ cin >> wordstr9;
 cin >> wordstrX;
 cout << wordstr << endl;
 
-if  (wordstr > woRdlim)
+
 {
 cout << "Too many words..." << endl;
 }
