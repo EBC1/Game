@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -35,11 +36,21 @@ cin >> wordstr7;
 cin >> wordstr8;
 cin >> wordstr9;
 cin >> wordstrX;
+
 cout << wordstr << endl;
+cout << wordstr2 << endl;
+cout << wordstr3 << endl;
+cout << wordstr4 << endl;
+cout << wordstr5 << endl;
+cout << wordstr6 << endl;
+cout << wordstr7 << endl;
+cout << wordstr8 << endl;
 
 
 {
-cout << "Too many words..." << endl;
+
+cout << "The amount of charcaters in this word is " << wordstr.length() << " bytes.\n";
+
 }
 
 return 0;
