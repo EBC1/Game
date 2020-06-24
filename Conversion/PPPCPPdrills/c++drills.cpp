@@ -4,6 +4,7 @@ using namespace std;
 int main()
 
     {
+    char retiredQ;
     double age;
     string first_name;
     string answEr1;
@@ -45,6 +46,27 @@ int main()
     {
         cout << "Next year youll be " << age + 1 << ". Thats crazy" << endl;
     }
+
+
+if ( 70 >= age)
+{
+cout << "Are you retired? Enter y for yes or n for no" << endl;
+cin >> retiredQ;
+if ( 'y' == retiredQ)
+{
+cout << "Well enjoy retirement! " << endl;
+}
+else if ( 'n' == retiredQ)
+{
+cout << "Thats tough... Hopefully you at least enjoy what you do." << endl;
+}
+}
+
+
+
+
+
+
 
     if (age == 17 )
     {
