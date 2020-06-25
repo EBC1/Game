@@ -4,18 +4,19 @@ using namespace std;
 
 int main()
 {
-double pennies;
-double nickels;
-double dimes;
-double quarters;
-double hdollar;
-double dollar;
-double cents = pennies + nickels * 5 + dimes * 10 + quarters * 25 + hdollar * 50 + dollar * 100;
+    double pennies = 1;
+    double nickels = 5;
+    double dimes = 10;
+    double quarters = 25;
+    double hdollar = 50;
+    double dollar = 100;
+    double cents = pennies + nickels + dimes + quarters + hdollar + dollar;
+    int total = cents;
 
-double total = cents* 0.01;
-double aboutTotal = round(total);
-cout << " Gimme your money, how much you got " << endl;
-cout << " How many pennies do you have " << endl;
+    double aboutTotal = round(total);
+
+    cout << " How much money are you carrying?" << endl;
+    cout << " How many pennies do you have " << endl;
 cin >> pennies;
 cout << " nickels? " << endl;
 cin >> nickels;
