@@ -11,7 +11,7 @@ int main()
     double hdollar;
     double dollar;
 
-    double cents = pennies * 1 + nickels * 5 + dimes * 10 + quarters * 25 + hdollar * 50 + dollar * 100;
+
 
 
 
@@ -29,9 +29,11 @@ int main()
     cin >> hdollar;
     cout << " lastly, how many bucks? Do you  have any cash on you right now? " << endl;
     cin >> dollar;
+    double cents = pennies * 1 + nickels * 5 + dimes * 10 + quarters * 25 + hdollar * 50 + dollar * 100;
 
-{
-    cout << "so you have $"<< cents << endl;
+
+
+    cout << "so you have "<< cents << " cents " << endl;
     cout << "Or  $" << cents * 0.01 << endl;
 }
 
@@ -39,4 +41,4 @@ int main()
 
 
 
-}
+
