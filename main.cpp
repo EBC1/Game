@@ -5,22 +5,20 @@ using namespace std;
 int main()
 {
 
-    int currency;
-    cout <<  "What currency do you wish to transfer to dollars. (yrn for Yen , BP for British Pounds, eur for Euro)." << endl;
-    cin >> currency;
-    if ('eur' == currency)
+    const double cmperinch = 2.54;
+    int length = 1;
+    char unit = 0;
+    cout << "Enter a length followed by the unit (c or i):\n";
+    cin >> length >> unit;
+
+    if(unit == 'i')
         {
-            cout << "$     "<< currency * 1.12 << endl;
+            cout << length << "in == " << cmperinch * length  << "cm\n";
         }
-    else if ('yen' == currency)
+    else
         {
-            cout << "$ " << currency * 0.0093   << endl;
+            cout << length << "cm == " << length/cmperinch << "in\n";
         }
-    else ('BP' == currency);
-        {
-            cout << "$ " << currency * 1.24 << endl;
-        }
-}
 
 
 
