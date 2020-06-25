@@ -1,48 +1,46 @@
-#include <iostream>
 
+#include <iostream>
+#include <math.h>
 using namespace std;
 
-
 int main()
-{
-    int hidNum = 7;
-    int guess;
-    int limit = 5;
-    int guessCount = 0;
-    bool outOfGuesses = false;
-
-
-
-    while(hidNum != guess)
     {
-        if (guessCount < limit) 
-        {
-            cout << "Enter guess: ";
-            cin >> guess;
-            guessCount++;
-        }
-        else
-        {
-            outOfGuesses = true;
-        }
 
-        if(outOfGuesses)
-        {
-            cout << "You Lose!";
-        } 
-        else
-        {
-            cout << "You Win!";
-        }
 
+    cout << "Enter three numbers. (Followed with 'Enter' " <<  endl;
+    double integer1, integer2, integer3;
+    cin >> integer1 >> integer2 >> integer3;
+
+    double smallest, middle, largest;
+
+    if (integer1 < integer2)
+    {
+        smallest = integer1;
+        largest = integer2;
     }
 
+    else
+    {
+        smallest = integer2;
+        largest = integer1;
+    }
 
+    if (integer3 <= smallest)
+    {
+        middle = smallest;
+        smallest =integer3;
+    }
 
-    return 0;
+    else if (smallest < integer3 && integer3 < largest)
+    {
+        middle = integer3;
+    }
+    else if (largest <= integer3)
+    {
+        middle = largest;
+        largest = integer3;
+    }
 
-}
+    cout << smallest << " , " << middle << " , " << largest << endl;
 
-
-
-
+    }
