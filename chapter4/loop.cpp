@@ -1,14 +1,17 @@
 #include <iostream>
 #include <cmath>
-
+using namespace std;
 
 int main()
 {
-int a = 0;
-while (a <= 25)
+int i = 0;
+while (i <= 25)
     {
-    cout << a << endl;
-    i = i +1;
+    int letval = 'a' + i;
+    cout << char(letval) << '\t' << int(letval) << endl;
+    ++i ;
+
+
 
 
     }
@@ -17,4 +20,4 @@ while (a <= 25)
   }
 
 
-}
+

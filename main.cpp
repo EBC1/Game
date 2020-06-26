@@ -1,30 +1,43 @@
+
 #include <iostream>
 #include <cmath>
 using namespace std;
 
 int main()
 {
-
-    int currency;
-    cout <<  "What currency do you wish to transfer to dollars. (yrn for Yen , BP for British Pounds, eur for Euro)." << endl;
+    int howMuchpound;
+    int howMuchyen;
+    int howMucheuro;
+    char currency;
+    cout <<  "What currency do you wish to transfer to dollars. (y for Yen , b for British Pounds, e for Euro)." << endl;
     cin >> currency;
-    if ('eur' == currency)
+
+
+
+    if ('e' == currency)
         {
-            cout << "$     "<< currency * 1.12 << endl;
+            cout << "How much" << endl;
+            cin  >> howMucheuro;
+            cout << "$     "<< howMucheuro * 1.12 << endl;
         }
-    else if ('yen' == currency)
+
+
+
+    if ('y' == currency)
         {
-            cout << "$ " << currency * 0.0093   << endl;
+            cout << "How much " << endl;
+            cin >> howMuchyen;
+            cout << "$ " << howMuchyen * 0.0093   << endl;
         }
-    else ('BP' == currency);
+
+
+    else ('b' == currency);
         {
-            cout << "$ " << currency * 1.24 << endl;
+
+            cout << "How much ";
+            cin >> howMuchpound;
+            cout << "$ " << howMuchpound * 1.24 << endl;
         }
 }
-
-
-
-  }
-
 
 
