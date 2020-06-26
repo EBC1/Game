@@ -1,30 +1,30 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 using namespace std;
 
-
-int square(int x)
+int main()
 {
-    int result =- 0;
-    for (int i = 0; i < x; ++i)
+
+vector <string> dislikedWords = {"Mushroom", "Escargo" , "Chitlins", "Tofu", "Olive", "Cottage cheese"};
+bool dislike = false;
+for(string words; cin >> words;)
     {
-        result += x;
+    if (dislike == words)
+        cout << words << endl;
+    else
+        cout << "BLEEP" << endl;
     }
 
-    return result;
-
-}
 
 
 
+vector<string>mainvector(10) = {123, 3435, 283, 47, 2309, 324, 435, 843, 873, 378};
+mainvector.push_back(23445646546);
+cout << mainvecctor << endl;
 
- int main()
- {
 
 
-    for(int i = 0; i<10000000000000000000000000000; i+=2)
-        cout << i << '\t' << square(i) << endl;
-    return 0;
-}
+
 
 
