@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <math.h>
 using namespace std;
 
 int main()
@@ -18,26 +19,35 @@ int main()
         {
             cout << "How much" << endl;
             cin  >> howMucheuro;
-            cout << "$     "<< howMucheuro * 1.12 << endl;
+            cout << "$ "<< howMucheuro * 1.12 << endl;
         }
 
 
 
-    if ('y' == currency)
+    else if ('y' == currency)
         {
             cout << "How much " << endl;
             cin >> howMuchyen;
             cout << "$ " << howMuchyen * 0.0093   << endl;
+            cout << "Or that can be rounded to " << round(howMuchyen * 0.0093) << endl;
         }
 
 
-    else ('b' == currency);
+    else if ('b' == currency)
         {
 
             cout << "How much ";
             cin >> howMuchpound;
             cout << "$ " << howMuchpound * 1.24 << endl;
         }
+
+    else
+        cout << "I am unfamiliar with the currency:  " << currency << endl;
+
+
+
+
 }
+
 
 
