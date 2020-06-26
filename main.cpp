@@ -2,27 +2,29 @@
 #include <cmath>
 using namespace std;
 
-int main()
+
+int square(int x)
 {
+    int result =- 0;
+    for (int i = 0; i < x; ++i)
+    {
+        result += x;
+    }
 
-    const double cmperinch = 2.54;
-    int length = 1;
-    char unit = 0;
-    cout << "Enter a length followed by the unit (c or i):\n";
-    cin >> length >> unit;
+    return result;
 
-    if(unit == 'i')
-        {
-            cout << length << "in == " << cmperinch * length  << "cm\n";
-        }
-    else
-        {
-            cout << length << "cm == " << length/cmperinch << "in\n";
-        }
+}
 
 
 
-  }
 
+ int main()
+ {
+
+
+    for(int i = 0; i<10000000000000000000000000000; i+=2)
+        cout << i << '\t' << square(i) << endl;
+    return 0;
+}
 
 
