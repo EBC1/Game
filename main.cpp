@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     cout << "Enter two integers seprated by a space."  << endl;
-    int numb1, numb2;
+    double numb1, numb2;
 
     while (cin >> numb1>>numb2)
     {
