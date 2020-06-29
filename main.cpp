@@ -5,20 +5,33 @@ using namespace std;
 
     int main()
     {
-        string dislikedWords = "Broccoli";
-        for (string temp ; cin>>temp;)
+        vector<string> words;
+        vector<string>disliked = {"Broccoli", "Puree", "Cauliflower", "Cabbage"};
+
+        cout << "Enter a word. Proper puncuation please: " << endl;
+        for (string neutralWord ; cin >> neutralWord; )
+        words.push_back(neutralWord);
+
+        for  (int i = 0; i < words.size(); ++i)
         {
-            if (dislikedWords != temp)
-                cout << temp << '\n';
-            else
-                cout << "BLEEP" << '\n';
+        for (int x = 0; x < disliked.size(); ++x)
+            if (words[i] == disliked[x])
+            {
+                words[i] = "Bleep";
 
-
+            }
+            cout << words[i] << "\n";
         }
 
-        return 0;
 
-    }
+                    }
+
+
+
+
+
+
+
 
 
 
