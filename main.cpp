@@ -10,23 +10,27 @@ int main()
     while (cin >> numb1>>numb2)
     {
 
+        if (numb1 == numb2)
+        {
+            cout << "The numbers are equal" << endl;
+        }
 
-    if (numb1 == numb2)
-    {
-        cout << "The numbers are equal" << endl;
-    }
 
-
-    else if (numb1 < numb2)
-    {
-        cout << "The smaller valuse is " << numb1 << endl;
-        cout << "The larger value is " << numb2 <<  endl;
-    }
-    else
-    {
-        cout << "The smaller value is " << numb2 << endl;
-        cout << "The larger value is " << numb1 << endl;
-    }
+        else if (numb1 < numb2)
+        {
+            cout << "The smaller valuse is " << numb1 << endl;
+            cout << "The larger value is " << numb2 <<  endl;
+        }
+        else
+        {
+            cout << "The smaller value is " << numb2 << endl;
+            cout << "The larger value is " << numb1 << endl;
+        }
+        double diff = numb1 - numb2;
+        if (diff > 0 && diff < 1.0/100 || diff < 0 && diff > -1.0/100)
+        {
+            cout << "The numbers are almost equal." << endl;
+        }
 
     }
     return 0;
