@@ -1,34 +1,37 @@
 #include <iostream>
 #include <cmath>
-#include <vector>
 using namespace std;
 
-    int main()
+int main()
+{
+    cout << "Enter two integers seprated by a space."  << endl;
+    int numb1, numb2;
+
+    while (cin >> numb1>>numb2)
     {
-        vector<string> words;
-        vector<string>disliked = {"Broccoli", "Puree", "Cauliflower", "Cabbage"};
-
-        cout << "Enter a word. Proper puncuation please: " << endl;
-        for (string neutralWord ; cin >> neutralWord; )
-        words.push_back(neutralWord);
-
-        for  (int i = 0; i < words.size(); ++i)
-        {
-        for (int x = 0; x < disliked.size(); ++x)
-            if (words[i] == disliked[x])
-            {
-                words[i] = "Bleep";
-
-            }
-            cout << words[i] << "\n";
-        }
+        cout << numb1 <<'\t' << numb2 << '\n';
+    }
 
 
-                    }
+    if (numb1 == w
+    numb2)
+    {
+        cout << "The smaller valuse is " << numb1 << endl;
+        cout << "The larger value is " << numb2 <<  endl;
+    }
+
+
+    return 0;
 
 
 
 
+
+
+
+
+
+}
 
 
 
