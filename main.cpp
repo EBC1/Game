@@ -9,18 +9,26 @@ int main()
 
     while (cin >> numb1>>numb2)
     {
-        cout << numb1 <<'\t' << numb2 << '\n';
+
+
+    if (numb1 == numb2)
+    {
+        cout << "The numbers are equal" << endl;
     }
 
 
-    if (numb1 == w
-    numb2)
+    else if (numb1 < numb2)
     {
         cout << "The smaller valuse is " << numb1 << endl;
         cout << "The larger value is " << numb2 <<  endl;
     }
+    else
+    {
+        cout << "The smaller value is " << numb2 << endl;
+        cout << "The larger value is " << numb1 << endl;
+    }
 
-
+    }
     return 0;
 
 
