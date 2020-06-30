@@ -16,12 +16,25 @@ int main()
         cout << value;
         if (first == true)
         {
-        first = false;
-        least = value;
-        greatest = value;
-        cout << " is the only value inputed so far." << endl;
+            first = false;
+            least = value;
+            greatest = value;
+            cout << " is the only value inputed so far." << endl;
         }
-
+        else if (value < least)
+        {
+            cout << " this is the smallest number so far" << endl;
+            least = val;
+        }
+        else if (value > greatest)
+        {
+            cout << " this is the largest number by far" << endl;
+            greatest = value
+        }
+        else
+        {
+            cout << '\n'
+        }
     }
 
 }
