@@ -1,37 +1,47 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
-
+#include <algorithm>
 using namespace std;
 
     int main()
     {
 
 
-        vector <string> words;
+        string words= "";
         vector<string> disliked = {"Broccoli", "Puree", "Cauliflower", "Cabbage"};
+        sort    (begin(disliked), end(disliked));
 
-        cout << "Enter a word. Proper puncuation please: " << endl;
-  for (string input; cin >> input;)
-    words.push_back(input);
-
-
-
-
-
-        for  (int i = 0; i < words.size(); ++i)
+        while (cin >> words)
         {
-        for (int x = 0; x < disliked.size(); ++x)
-            if (words[i] == disliked[x])
-            {
-                words[i] = "Bleep";
 
-            }
-            cout << words[i] << endl;
+        if ( binary_search(begin(disliked), end(disliked),words))
+        {
+            cout << "INVALID" << endl;
+        }
+        else
+        {
+            cout << words << endl;
         }
 
 
-                    }
+
+
+        }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
