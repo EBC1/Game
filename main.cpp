@@ -1,16 +1,22 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
+
 using namespace std;
 
     int main()
     {
-        vector<string> words;
+
+        string input;
+        vector<string>words;
         vector<string>disliked = {"Broccoli", "Puree", "Cauliflower", "Cabbage"};
 
         cout << "Enter a word. Proper puncuation please: " << endl;
-        for (string neutralWord ; cin >> neutralWord; )
-        words.push_back(neutralWord);
+        while (cin>> words)
+            words.push_back(input)
+        if ( words  == disliked)
+        disliked.push_back("Broccoli", "Puree", "Cauliflower", "Cabbage");
+
 
         for  (int i = 0; i < words.size(); ++i)
         {
@@ -20,7 +26,7 @@ using namespace std;
                 words[i] = "Bleep";
 
             }
-            cout << words[i] << "\n";
+            cout << words[i] << endl;
         }
 
 
