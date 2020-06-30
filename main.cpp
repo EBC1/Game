@@ -4,36 +4,38 @@ using namespace std;
 
 int main()
 {
-    cout << "Enter two integers seprated by a space."  << endl;
-    double numb1, numb2;
+    cout << "Enter a double value." << endl;
+    bool first {true};
+    double value {0.0};
+    double least{0.0};
+    double greatest {0.0};
+    string unit {" "};
 
-    while (cin >> numb1>>numb2)
+    while (cin >> value)
     {
-
-        if (numb1 == numb2)
+        cout << value;
+        if (first == true)
         {
-            cout << "The numbers are equal" << endl;
-        }
-
-
-        else if (numb1 < numb2)
-        {
-            cout << "The smaller valuse is " << numb1 << endl;
-            cout << "The larger value is " << numb2 <<  endl;
-        }
-        else
-        {
-            cout << "The smaller value is " << numb2 << endl;
-            cout << "The larger value is " << numb1 << endl;
-        }
-        double diff = numb1 - numb2;
-        if (diff > 0 && diff < 1.0/100 || diff < 0 && diff > -1.0/100)
-        {
-            cout << "The numbers are almost equal." << endl;
+        first = false;
+        least = value;
+        greatest = value;
+        cout << " is the only value inputed so far." << endl;
         }
 
     }
-    return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+    }
 
 
 
