@@ -24,41 +24,24 @@ int main()
         else if (value < least)
         {
             cout << " this is the smallest number so far" << endl;
-            least = val;
+            least = value;
         }
         else if (value > greatest)
         {
             cout << " this is the largest number by far" << endl;
-            greatest = value
+            greatest = value;
         }
         else
         {
-            cout << '\n'
+            cout << '\n';
         }
     }
-
+    return 0;
 }
 
 
 
 
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-}
 
 
 
