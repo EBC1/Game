@@ -6,44 +6,40 @@
 using namespace std;
 int d;
 
-const vector<string> allowedUnits = {"m", "in", "cm", "ft",};
+
 
 
 
 int main()
 {
 
-    cout << "Enter a double value." << endl;
-    string inputVal;
-    string inputUnit;
-    cin >> inputVal;
-    size_t unitLocation;
-    double inputvalNum = stod (inputVal, &unitLocation);
-    cout << inputvalNum <<endl ;
-    cout << unitLocation <<endl;
-    cout << inputVal [unitLocation] << endl;
 
-//    bool first {true};
-//    double value {0.0};
-//    double least{0.0};
-//    double greatest {0.0};
-//    string unitMeasur;
-//    cout << "Enter a number and unit of measurement" << endl;
-//
-//    while (cin>> value>> unitMeasur)
-//    {
-//
-//    if (unitMeasur == "cm")
-//        {
-//        cout << value * 0.01 << "m"<< endl;
-//        }
-//    else if (unitMeasur == "in")
-//    {
-//        cout << value * 0.0254<< "m" << endl;
-//    }
-//    else if (unitMeasur == "ft")
-//     cout << value * 0.3048 << "m" << endl;
-//
+
+
+    string unitMeasur;
+    cout << "Enter a number and unit of measurement" << endl;
+    double userVal;
+    while (cin>> userVal>> unitMeasur)
+    {
+
+        if (unitMeasur == "cm")
+            {
+                cout << userVal * 0.01 << "m"<< endl;
+            }
+        else if (unitMeasur == "in")
+            {
+                cout << userVal* 0.0254<< "m" << endl;
+            }
+        else if (unitMeasur == "ft")
+            {
+                cout << userVal * 0.3048 << "m" << endl;
+            }
+        else if (unitMeasur == "m")
+            {
+                cout << userVal * 100 << "cm " << userVal * 39.3701 << "in " << userVal * 3.2084 << "ft " << endl;
+            }
+
+
 
 
 return 0;
@@ -60,40 +56,10 @@ return 0;
 
 
 
-    /*while (cin >> value >> unitMeasur)
-    {
-
-            if ()
-
-            cout << value;
-            if (first == true)
-            {
-                first = false;
-                least = value;
-                greatest = value;
-                cout << " is the only number inputed so far and the unit of measurement is " << unitMeasur <<endl;
-                cout << "In meters this is " <<
-            }
-            else if (value < least)
-            {
-                cout << " this is the smallest number so far and is in  " << endl;
-                least = value;
-            }
-            else if (value > greatest)
-            {
-                cout << " this is the largest number by far" << endl;
-                greatest = value;
-            }
-            else
-            {
-                cout << '\n';
-            }
-
-    }
 
     return 0;
 }
-*/
+
 
 
 
