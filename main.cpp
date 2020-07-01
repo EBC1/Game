@@ -58,7 +58,8 @@ int main()
             }
         else
         {
-        cout << "not valid unit of measurement. Instead use 'cm','in','ft', or 'm' " << endl;
+            cout << "not valid unit of measurement. Instead use 'cm','in','ft', or 'm' " << endl;
+            break;
         }
     }
     return 0;
