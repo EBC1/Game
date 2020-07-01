@@ -2,6 +2,15 @@
 #include <cmath>
 using namespace std;
 
+bool isIllegalString(std::string input)
+{
+
+
+	return true;
+}
+
+
+
 int main()
 {
     cout << "Enter a double value." << endl;
