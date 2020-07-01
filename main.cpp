@@ -2,6 +2,7 @@
 #include <cmath>
 #include <vector>
 #include <algorithm>
+#include <string>
 using namespace std;
 int d;
 
@@ -13,9 +14,15 @@ int main()
 {
 
     cout << "Enter a double value." << endl;
-    string inputValue;
-    cin >> inputValue;
-    cout << inputValue;
+    string inputVal;
+    string inputUnit;
+    cin >> inputVal;
+    size_t unitLocation;
+    double inputvalNum = stod (inputVal, &unitLocation);
+    cout << inputvalNum <<endl ;
+    cout << unitLocation <<endl;
+    cout << inputVal [unitLocation] << endl;
+
 //    bool first {true};
 //    double value {0.0};
 //    double least{0.0};
