@@ -27,6 +27,7 @@ int main()
     double greatest {0.0};
     string legalInput;
 
+
     while (cin >> value >> legalInput)
     {
         if (isLegalString(legalInput))
