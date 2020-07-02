@@ -4,81 +4,39 @@
 #include <algorithm>
 #include <string>
 #include <stdexcept>
+
 using namespace std;
-
-double unitConvToM (double orgVal , string unit)
-{
-    if ( "m" == unit)
-    {
-        return orgVal;
-    }
-
-    else if ("cm" == unit)
-    {
-        return orgVal * 0.01;
-    }
-    else if ("ft" == unit)
-    {
-        return orgVal * 0.3048;
-    }
-    else if ( "in" == unit)
-    {
-        return orgVal * 0.0254;
-    }
-    else
-    {
-        throw invalid_argument  ("invalid unit");
-    }
-
-}
-
-
 
 int main()
 {
 
 
+    vector<double> numbS;
+    double numb;
 
-    string unitInput;
-    cout << "Enter a value." << endl;
-    bool first {true};
-    double value {0.0};
-    double userVal;
-    double least{0.0};
-    double greatest {0.0};
+    cout << "This program adds numbers continuously until you dont want to do that anymore " << "Enter a number" << endl;
 
 
-    cout << "Enter a number and unit of measurement" << endl;
-    while (cin >> userVal >> unitInput)
+    while(cin >> numb)
     {
+        numbS.push_back(numb);
+        cout << "end the program by entering  a character or anything not a number to stop and calculate the numbers entered so far." << endl;
 
-    double drill7conv = unitConvToM ( userVal , unitInput);
+    }
+
+    double sum = 0.0;
+    for (auto & sumDone : numbS)
+        {
+            sum += sumDone;
+        }
+
+    cout << "the sum is: " << sum << '\n';
 
 
-                cout << userVal << unitInput;
-            if (first == true)
-                {
-                    first = false;
-                    least = value;
-                    greatest = value;
-                    cout << " is the only value inputed so far." << endl;
-                }
-            else if (value < least)
-                {
-                    cout << " this is the smallest number so far" << endl;
-                    least = value;
-                }
-            else if (value > greatest)
-                {
-                    cout << " this is the largest number by far" << endl;
-                    greatest = value;
-                }
-            else
-                {
-                    cout << '\n';
-                }
-            }
+    cout << "least " << numbS[0] << endl;
+    cout << "greatest " << numbS[numbS.size()-1] << endl;
 
+    cout << "the average between the numbers entered is... " << sum/numbS.size() << endl;
 
     return 0;
 }
