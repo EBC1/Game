@@ -44,16 +44,6 @@ int main()
 
 
 
-
-
-
-
-
-
-
-
-
-
     string unitMeasur;
     cout << "Enter a value." << endl;
     bool first {true};
