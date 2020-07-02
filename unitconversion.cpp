@@ -3,10 +3,38 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <stdexcept>
 using namespace std;
-int d;
+
+double unitConvToM (double orgVal , string unit)
+{
+    if ( "m" == unit)
+    {
+        return orgVal;
+    }
+
+    else if ("cm" == unit)
+    {
+        return orgVal * 0.01;
+    }
+    else if ("ft" == unit)
+    {
+        return orgVal * 0.3048;
+    }
+    else if ( "in" == unit)
+    {
+        return orgVal * 0.0254;
+    }
+    else
+    {
+        throw invalid_argument  ("invalid unit");
+    }
 
 
+
+
+
+}
 
 
 
@@ -16,59 +44,6 @@ int main()
 
 
 
-    string unitMeasur;
-    cout << "Enter a number and unit of measurement" << endl;
-    double userVal;
-    while (cin>> userVal>> unitMeasur)
-    {
-
-        if (unitMeasur == "cm")
-            {
-                cout << userVal * 0.01 << "m"<< endl;
-            }
-        else if (unitMeasur == "in")
-            {
-                cout << userVal* 0.0254<< "m" << endl;
-            }
-        else if (unitMeasur == "ft")
-            {
-                cout << userVal * 0.3048 << "m" << endl;
-            }
-        else if (unitMeasur == "m")
-            {
-                cout << userVal * 100 << "cm " << endl;
-
-                cout << userVal * 39.3701 << "in " << endl;
-
-                cout << userVal * 3.2084 << "ft " << endl;
-            }
 
 
-
-
-return 0;
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-    return 0;
 }
-
-
-
-
-
-
-
-
-
