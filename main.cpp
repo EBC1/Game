@@ -11,36 +11,44 @@ int main()
 {
 
 
-    vector<double> numbS;
-    double numb;
+    int squareNumb, riceAmount = 1;
+    char rice_start;
+    int squareStart;
 
-    cout << "This program adds numbers continuously until you dont want to do that anymore " << '\n'
-         << "'Enter a number'" << endl;
-
-
-    while(cin >> numb)
-    {
-        numbS.push_back(numb);
-        cout << "end the program by entering  a character or anything not a number to stop and calculate the numbers entered so far." << endl;
-
-    }
-
-    double sum = 0.0;
-    for (auto & sumDone : numbS)
-        {
-            sum += sumDone;
-        }
-
-    cout << "the sum is: " << sum << '\n';
+    cout << "Press s to start rice and square counter. " << endl;
+            while (cin >> rice_start)
+            {
+                 if ('s' == rice_start)
 
 
-    cout << "least " << numbS[0] << endl;
-    cout << "greatest " << numbS[numbS.size()-1] << endl;
 
-    cout << "the average between the numbers entered is... " << sum/numbS.size() << endl;
+                while (riceAmount <= 1000000000)
+                {
+                    cout << riceAmount << " grains of rice on" <<  squareNumb << endl;
+                    squareNumb++;
+                    riceAmount *=2;
 
+                    int riceGoal1 = 1000;
+                    int riceGoal2 = 1000000;
+                    int riceGoal3 = 1000000000;
+                    if (riceAmount == riceGoal1)
+                    {
+                        cout << " Youve reached the first goal " << endl;
+                    }
+                    if (riceAmount == riceGoal2)
+                    {
+                        cout << " Second goal met " << endl;
+                    }
+                    if (riceAmount == riceGoal3)
+                    {
+                        cout << "Final goal met" << endl;
+                    }
+
+                }
+            }
     return 0;
 }
+
 
 
 
