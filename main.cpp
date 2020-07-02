@@ -14,7 +14,8 @@ int main()
     vector<double> numbS;
     double numb;
 
-    cout << "This program adds numbers continuously until you dont want to do that anymore " << "Enter a number" << endl;
+    cout << "This program adds numbers continuously until you dont want to do that anymore " << '\n'
+         << "'Enter a number'" << endl;
 
 
     while(cin >> numb)
