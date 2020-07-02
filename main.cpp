@@ -30,10 +30,6 @@ double unitConvToM (double orgVal , string unit)
         throw invalid_argument  ("invalid unit");
     }
 
-
-
-
-
 }
 
 
@@ -43,23 +39,23 @@ int main()
 
 
 
-
-    string unitMeasur;
+    string unitInput;
     cout << "Enter a value." << endl;
     bool first {true};
     double value {0.0};
-    double userVal = value;
+    double userVal;
     double least{0.0};
     double greatest {0.0};
-    string legalInput = unitMeasur;
+
 
     cout << "Enter a number and unit of measurement" << endl;
-    while (cin >> value >> legalInput)
+    while (cin >> userVal >> unitInput)
     {
 
+    double drill7conv = unitConvToM ( userVal , unitInput);
 
 
-                cout << value <<legalInput;
+                cout << userVal << unitInput;
             if (first == true)
                 {
                     first = false;
