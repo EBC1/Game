@@ -9,9 +9,11 @@ using namespace std;
 
 int main()
 {
-
-
-    int squareNumb, riceAmount = 1;
+    int riceGoal1 = 1000;
+    int riceGoal2 = 1000000;
+    int riceGoal3 = 1000000000;
+    int riceAmount =1;
+    int squareNumb = 1;
     char rice_start;
     int squareStart;
 
@@ -22,29 +24,17 @@ int main()
 
 
 
-                while (riceAmount <= 1000000000)
+                while (riceAmount <= 1000000000 && squareNumb <= 64)
                 {
-                    cout << riceAmount << " grains of rice on" <<  squareNumb << endl;
+                    cout << riceAmount << " grains of rice on square " <<  squareNumb << endl;
                     squareNumb++;
                     riceAmount *=2;
 
-                    int riceGoal1 = 1000;
-                    int riceGoal2 = 1000000;
-                    int riceGoal3 = 1000000000;
-                    if (riceAmount == riceGoal1)
-                    {
-                        cout << " Youve reached the first goal " << endl;
-                    }
-                    if (riceAmount == riceGoal2)
-                    {
-                        cout << " Second goal met " << endl;
-                    }
-                    if (riceAmount == riceGoal3)
-                    {
-                        cout << "Final goal met" << endl;
-                    }
+
 
                 }
+
+
             }
     return 0;
 }
