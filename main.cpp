@@ -14,6 +14,7 @@ int main()
     vector<double> numbS;
     double numb;
 
+
     cout << "This program adds numbers continuously until you dont want to do that anymore " << "Enter a number" << endl;
 
 
@@ -35,8 +36,10 @@ int main()
 
     cout << "least " << numbS[0] << endl;
     cout << "greatest " << numbS[numbS.size()-1] << endl;
-
+    sort (numbS.begin() , numbS.end(), greater<double>()    );
     cout << "the average between the numbers entered is... " << sum/numbS.size() << endl;
+
+
 
     return 0;
 }
