@@ -33,10 +33,10 @@ int main()
 
     cout << "the sum is: " << sum << '\n';
 
+    sort (numbS.begin() , numbS.end());
 
     cout << "least " << numbS[0] << endl;
     cout << "greatest " << numbS[numbS.size()-1] << endl;
-    sort (numbS.begin() , numbS.end(), greater<double>()    );
     cout << "the average between the numbers entered is... " << sum/numbS.size() << endl;
 
 
