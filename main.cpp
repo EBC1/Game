@@ -9,38 +9,19 @@ using namespace std;
 
 int main()
 {
-    vector<int> riceGoals{1000, 1000000, 1000000000};
+    int Maxsqr = 100;
+    vector <int> sqrNums;
+    for(int i = 2; i < max; i++)
+    {
+        sqrNums.push_back(i);
+    }
 
-    int square{1};
-    int currentRiceonSquare{1};
-    int previousRiceonSquare{0};
-    char rice_start;
-    int squareStart;
+    for (int j = 2; j < 6; j++)
+        for (int i =0; i< sqrNums.size() -1; i++)
+    {
 
-    for (int i = 0; i < riceGoals.size(); ++i)
-        {
-            while (riceGoals[i] > previousRiceonSquare + currentRiceonSquare)
-                {
-                    cout << "Square: " << square++ << endl;
-                    cout << " Grains on current square: " << currentRiceonSquare << endl;
-                    cout << " Rice on previous squares: " << previousRiceonSquare << endl;
-                    cout << " Total rice grans: " << previousRiceonSquare + currentRiceonSquare <<endl;
+    }
 
-                    previousRiceonSquare += currentRiceonSquare;
-                    currentRiceonSquare *= 2;
-
-                }
-        }
-
-    cout << "Press s to start rice and square counter. " << endl;
-            while (cin >> rice_start)
-            {
-                 if ('s' == rice_start);
-
-
-
-
-            }
     return 0;
 }
 
