@@ -27,8 +27,11 @@ int main()
 
     cout << "The quadratic equation is ax^2 + bx + c = 0" << endl;
     cout << "Enter the variables for a , b , and finally c followed by with 'Enter' after each the value is given." << endl;
+    cout <<"Input A: " << cin >>varA << endl;
+    cout << varA * 2 << endl;
 
-    cin >> varA >> varB >> varC;
+
+
 
     if (varA == 0 && varB ==0)
     	{
@@ -46,11 +49,12 @@ int main()
     		x1=-varB+sqrt(x2);
     		cout << "Root: "<< x1 << endl;
     	}
-    if ((varB*varB-4*varA*varC)<0)
+    if ((varB*varB-4*varA*varC
+         )<0)
     {
     	cout << "I N V A L I D     R O O T" << endl;
     }
-
+*/
     return 0;
 
 
