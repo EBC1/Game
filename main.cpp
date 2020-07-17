@@ -28,7 +28,7 @@ int main()
     cout << "The quadratic equation is ax^2 + bx + c = 0" << endl;
     cout << "Enter the variables for a , b , and finally c followed by with 'Enter' after each the value is given." << endl;
 
-
+    cin >> varA >> varB >> varC;
 
 
 
