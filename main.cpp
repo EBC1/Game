@@ -19,8 +19,7 @@ using namespace std;
 
 int main()
 {
-    double x1;
-    double x2;
+
     double varA;
     double varB;
     double varC;
@@ -30,12 +29,34 @@ int main()
 
     cin >> varA >> varB >> varC;
 
+ if ( ((varB*varB)-(4*varA*varC)) <0)
+    {
+    	cout << "IMAGINARY ROOTS ARE INVALID" << endl;
+    }
+else if ( ((varB*varB)-(4*varA*varC)) == 0)
+
+    {
+        cout << "Only one root" << -(varB/ (varA));
+
+    }
+    double discRim = sqrt((varB*varB)-(4*varA*varC));
+
+    double x1 = ((-varB)+discRim)/(2*varA);
+    double x2 = ((-varB)-discRim)/(2*varA);
+  cout << x1 << "         and             " << x2 << " are the roots." << endl;
 
 
+
+
+
+
+
+/*
     if (varA == 0 && varB ==0)
     	{
     		cout << "I N V A L I D" << endl;
     	}
+
     if (varA == 0 && varB != 0)
     	{
     		x1 = -(varC/varB);
@@ -48,11 +69,7 @@ int main()
     		x1=-varB+sqrt(x2);
     		cout << "Root: "<< x1 << endl;
     	}
-    if ((varB*varB-4*varA*varC
-         )<0)
-    {
-    	cout << "I N V A L I D     R O O T" << endl;
-    }
+*/
 
     return 0;
 
